@@ -3,6 +3,12 @@
 ## Solutions year 2021
 Task                                                                      | Python Solution              |
 ---                                                                       | ---                          |
+[Day 01: Calorie Counting](https://adventofcode.com/2022/day/1)           | [day01.py](2022/01/day1.py)   |
+
+
+## Solutions year 2021
+Task                                                                      | Python Solution              |
+---                                                                       | ---                          |
 [Day 01: Sonar Sweep](http://adventofcode.com/2021/day/1)                 | [day01.py](2021/1/day1.py)   |
 [Day 02: Dive!](http://adventofcode.com/2021/day/2)                       | [day02.py](2021/2/day2.py)   |
 [Day 03: Binary Diagnostic](http://adventofcode.com/2021/day/3)           | [day03.py](2021/3/day3.py)   |

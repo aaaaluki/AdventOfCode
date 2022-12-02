@@ -3,8 +3,8 @@
 ## Solutions year 2021
 Task                                                                      | Python Solution              |
 ---                                                                       | ---                          |
-[Day 01: Calorie Counting](https://adventofcode.com/2022/day/1)           | [day01.py](2022/01/day1.py)   |
-[Day 02: Rock Paper Scissors](https://adventofcode.com/2022/day/2)           | [day02.py](2022/02/day2.py)   |
+[Day 01: Calorie Counting](https://adventofcode.com/2022/day/1)           | [day01.py](2022/01/day01.py)   |
+[Day 02: Rock Paper Scissors](https://adventofcode.com/2022/day/2)        | [day02.py](2022/02/day02.py)   |
 
 
 ## Solutions year 2021

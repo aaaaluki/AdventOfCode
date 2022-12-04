@@ -19,12 +19,13 @@ func partOne(filename string) {
     defer file.Close()
 
     // Init result
-    var result int32 = 0
+    var result int = 0
 
     scanner := bufio.NewScanner(file)
     for scanner.Scan() {
         line := scanner.Text()
         // Code goes here
+        _ = line
 
     }
 
@@ -42,12 +43,13 @@ func partTwo(filename string) {
     defer file.Close()
 
     // Init result
-    var result int32 = 0
+    var result int = 0
 
     scanner := bufio.NewScanner(file)
     for scanner.Scan() {
         line := scanner.Text()
         // Code goes here
+        _ = line
 
     }
 

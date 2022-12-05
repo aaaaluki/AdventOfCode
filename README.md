@@ -7,6 +7,7 @@ Task                                                                      | Pyth
 [Day 02: Rock Paper Scissors](https://adventofcode.com/2022/day/2)        | [day02.py](2022/02/day02.py) | -                            |
 [Day 03: Rucksack Reorganization](https://adventofcode.com/2022/day/3)    | [day03.py](2022/03/day03.py) | -                            |
 [Day 04: Camp Cleanup](https://adventofcode.com/2022/day/4)               | [day04.py](2022/04/day04.py) | -                            |
+[Day 5: Supply Stacks](https://adventofcode.com/2022/day/5)               | [day05.py](2022/05/day05.py) | -                            |
 
 
 ## Solutions year 2021

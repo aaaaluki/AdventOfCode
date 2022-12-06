@@ -8,6 +8,7 @@ Task                                                                      | Pyth
 [Day 03: Rucksack Reorganization](https://adventofcode.com/2022/day/3)    | [day03.py](2022/03/day03.py) | [day03.go](2022/03/day03.go) |
 [Day 04: Camp Cleanup](https://adventofcode.com/2022/day/4)               | [day04.py](2022/04/day04.py) | -                            |
 [Day 5: Supply Stacks](https://adventofcode.com/2022/day/5)               | [day05.py](2022/05/day05.py) | -                            |
+[Day 6: Tuning Trouble](https://adventofcode.com/2022/day/6)              | [day06.py](2022/06/day06.py) | -                            |
 
 
 ## Solutions year 2021

@@ -1,16 +1,18 @@
 #!/bin/bash
 
+WORK_DIR=$(dirname $0)
+
 set -e
 [ $# -ne 0 ] && echo -e "$ $0" && exit 1
 
 day=$(date +%d)
 year=$(date +%Y)
-folder="${year}/${day}"
+folder="${WORK_DIR}/${year}/${day}"
 
 mkdir -p $folder
 echo "Created ${folder}"
 
-cp day.py "${folder}/day${day}.py"
-cp day.go "${folder}/day${day}.go"
+cp "${WORK_DIR}/day.py" "${folder}/day${day}.py"
+cp "${WORK_DIR}/day.go" "${folder}/day${day}.go"
 touch "${folder}/test"
-curl --cookie cookies.txt "https://adventofcode.com/2022/day/${day#0}/input" > "${folder}/input"
+curl --cookie "${WORK_DIR}/cookies.txt" "https://adventofcode.com/2022/day/${day#0}/input" > "${folder}/input"

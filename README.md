@@ -9,6 +9,7 @@ Task                                                                      | Pyth
 [Day 04: Camp Cleanup](https://adventofcode.com/2022/day/4)               | [day04.py](2022/04/day04.py) | -                            |
 [Day 5: Supply Stacks](https://adventofcode.com/2022/day/5)               | [day05.py](2022/05/day05.py) | -                            |
 [Day 6: Tuning Trouble](https://adventofcode.com/2022/day/6)              | [day06.py](2022/06/day06.py) | -                            |
+[Day 7: No Space Left On Device](https://adventofcode.com/2022/day/7)     | [day07.py](2022/07/day07.py) | -                            |
 
 
 ## Solutions year 2021

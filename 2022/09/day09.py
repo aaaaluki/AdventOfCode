@@ -5,28 +5,32 @@ from typing import List
 import numpy as np
 
 
+DIRECTIONS = {'R': 1, 'U': 1j, 'L': -1, 'D': -1j}
+
+
 def move_from_delta(delta):
-    # Basic mapping, these can be rotated by 90 deg (total of 16 moves)
     # delta -> move
     # 0 + 0j -> 0 + 0j
     # 0 + 1j -> 0 + 0j
     # 1 + 1j -> 0 + 0j
     # 0 + 2j -> 0 + 1j
     # 1 + 2j -> 1 + 1j
-    angle = (np.angle(delta, deg=True) + 360) % 360
-    norm = np.absolute(delta)
+    angle = (np.angle(delta, deg=True) + 360) % 360 # Change range to [0, 360)
 
-    if norm < 2:
+    # No move
+    if max(abs(delta.real), abs(delta.imag)) <= 1:
         return 0 + 0j
 
+    # Horizontal / Vertical move
     if int(angle) in [0, 90, 180, 270]:
         angle = int(angle)
         return np.round(np.exp(1j*np.deg2rad(angle)))
 
+    # Diagonal move
     quadrant_angles = np.array([45, 135, 225, 315])
-    quadrant = np.argmin(np.abs(quadrant_angles - angle*np.ones_like(quadrant_angles)))
+    quadrant = np.argmin(np.abs(quadrant_angles - angle))
 
-    return np.round(np.exp(1j*(quadrant*np.pi/2 + np.pi/4)))
+    return np.round(np.exp(1j*np.deg2rad(quadrant_angles[quadrant])))
 
 
 def part_one(lines: List[str]):
@@ -40,23 +44,10 @@ def part_one(lines: List[str]):
     for line in lines:
         cmd, length = line.split(' ')
         length = int(length)
-        if cmd == 'R':
-            vec =  1 + 0j
-        elif cmd == 'U':
-
-            vec =  0 + 1j
-        elif cmd == 'L':
-            vec = -1 + 0j
-        else: # D
-            vec =  0 - 1j
 
         for i in range(length):
-            head += vec
-            delta = head - tail
-
-            move = move_from_delta(delta)
-            tail += move
-
+            head += DIRECTIONS[cmd]
+            tail += move_from_delta(head - tail)
             visited_positions.add(tail)
 
     print(f'Result: {len(visited_positions)}')
@@ -73,25 +64,11 @@ def part_two(lines: List[str]):
     for line in lines:
         cmd, length = line.split(' ')
         length = int(length)
-        if cmd == 'R':
-            vec =  1 + 0j
-        elif cmd == 'U':
-
-            vec =  0 + 1j
-        elif cmd == 'L':
-            vec = -1 + 0j
-        else: # D
-            vec =  0 - 1j
 
         for i in range(length):
-            knots[0] += vec
-
-            # Calc deltas
+            knots[0] += DIRECTIONS[cmd]
             for i in range(tail_number):
-                delta = knots[i] - knots[i + 1]
-                move = move_from_delta(delta)
-                knots[i + 1] += move
-
+                knots[i + 1] += move_from_delta(knots[i] - knots[i + 1])
             visited_positions.add(knots[tail_number])
 
     print(f'Result: {len(visited_positions)}')

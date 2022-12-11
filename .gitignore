@@ -7,9 +7,8 @@
 # Unignore all dirs
 !*/
 
-# Unignore Advent of Code inputs
+# Unignore Advent of Code test files
 !test
-!input
 
 # Python
 *.pyc

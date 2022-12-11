@@ -7,7 +7,7 @@ Task                                                                      | Pyth
 [Day 02: Rock Paper Scissors](https://adventofcode.com/2022/day/2)        | [day02.py](2022/02/day02.py) | [day02.go](2022/02/day02.go) |
 [Day 03: Rucksack Reorganization](https://adventofcode.com/2022/day/3)    | [day03.py](2022/03/day03.py) | [day03.go](2022/03/day03.go) |
 [Day 04: Camp Cleanup](https://adventofcode.com/2022/day/4)               | [day04.py](2022/04/day04.py) | [day04.go](2022/04/day04.go) |
-[Day 05: Supply Stacks](https://adventofcode.com/2022/day/5)              | [day05.py](2022/05/day05.py) | -                            |
+[Day 05: Supply Stacks](https://adventofcode.com/2022/day/5)              | [day05.py](2022/05/day05.py) | [day05.go](2022/05/day05.go) |
 [Day 06: Tuning Trouble](https://adventofcode.com/2022/day/6)             | [day06.py](2022/06/day06.py) | -                            |
 [Day 07: No Space Left On Device](https://adventofcode.com/2022/day/7)    | [day07.py](2022/07/day07.py) | -                            |
 [Day 08: Treetop Tree House](https://adventofcode.com/2022/day/8)         | [day08.py](2022/08/day08.py) | -                            |

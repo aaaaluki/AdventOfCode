@@ -13,6 +13,7 @@ Task                                                                      | Pyth
 [Day 08: Treetop Tree House](https://adventofcode.com/2022/day/8)         | [day08.py](2022/08/day08.py) | -                            |
 [Day 09: Rope Bridge](https://adventofcode.com/2022/day/9)                | [day09.py](2022/09/day09.py) | -                            |
 [Day 10: Cathode-Ray Tube](https://adventofcode.com/2022/day/10)          | [day10.py](2022/10/day10.py) | -                            |
+[Day 11: Monkey in the Middle](https://adventofcode.com/2022/day/11)      | [day11.py](2022/11/day11.py) | -                            |
 
 
 ## Solutions year 2021

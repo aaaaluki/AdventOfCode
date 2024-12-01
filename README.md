@@ -1,5 +1,11 @@
 # Advent Of Code
 
+## Solutions year 2024
+Task                                                                      | Go Solution                  | Python Solution              |
+---                                                                       | ---                          | ---                          |
+[Day 01: Historian Hysteria](https://adventofcode.com/2024/day/1)         | [day01.go](2024/01/day01.go) | [day01.py](2024/01/day01.py) |
+
+
 ## Solutions year 2022
 Task                                                                      | Python Solution              | Go Solution                  |
 ---                                                                       | ---                          | ---                          |
